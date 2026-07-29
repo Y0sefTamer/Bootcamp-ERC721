@@ -1,66 +1,17 @@
-## Foundry
+# Bootcamp ERC721 Token 🎨
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A foundational ERC721 Non-Fungible Token (NFT) smart contract project built as part of a Web3 Solidity Bootcamp. This repository demonstrates how to write and deploy a standard NFT contract using modern Ethereum development tools.
 
-Foundry consists of:
+## 🌟 Features
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+* **Standard ERC721 Implementation:** Built on top of [OpenZeppelin's](https://openzeppelin.com/contracts/) secure and community-vetted contracts.
+* **Minting Functionality:** Allows the contract owner to mint new NFTs to specific addresses.
+* **Metadata Storage:** Supports `tokenURI` to link NFTs to off-chain metadata (like IPFS or Arweave).
+* **Access Control:** Uses `Ownable` to restrict minting privileges to the contract deployer.
 
-## Documentation
+## 🛠️ Tech Stack
 
-https://book.getfoundry.sh/
+* **Smart Contracts:** Solidity `^0.8.27`
+* **Framework:** [Foundry](https://foundry.org/) (or substitute with Hardhat/Truffle)
+* **Libraries:** OpenZeppelin Contracts
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
